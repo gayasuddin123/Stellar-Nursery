@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    
+}
+:root{
+    --shadow: #42b6f5;
+}
+header .logo{
+    text-transform: uppercase;
+    font-size: large;
+}
+/* navbar css start */
+nav{
+    /* display: flex; */
+    position: relative;
+    top: 10px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    color: white;
+    padding: 10px 25px;
+    /* border: 1px solid rgb(73, 157, 231); */
+    /* border-radius: 40px; */
+    /* box-shadow: 2px 2px 10px rgb(82, 130, 233); */
+}
+nav li{
+    display: flex;
+    list-style: none;
+    /* color: white; */   
+}
+nav li a{
+    margin: 0 15px;
+    font-size: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    /* border: 1px solid blue; */
+    border-radius: 40px;
+    color: white;
+}
+nav li a:hover{
+    text-shadow: 1px 1px 10px #0c8bf3 ;
+    border: 1px solid rgb(60, 118, 219);
+    border-radius: 40px ;
+    box-shadow: 1px 1px 20px #357fe0;
+}
+/* navbar css end */
+
+.home{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(nebula.jpg);
+    background-position: center;
+    background-size:cover;
+}
+.main-heading{
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+    
+}
+.main-heading h1{
+    color: #ffffff;
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+.main-heading span{
+    animation: glowing 2s infinite;
+    text-shadow: 0 0 10px var(--shadow), 0 0 20px var(--shadow), 0 0 30px var(--shadow);
+
+}
+@keyframes glowing {
+    0% {
+      text-shadow: 0 0 10px var(--shadow), 0 0 20px var(--shadow), 0 0 30px var(--shadow);
+    }
+    50% {
+      text-shadow: none;
+    }
+    100% {
+      text-shadow: 0 0 10px var(--shadow), 0 0 20px var(--shadow), 0 0 30px var(--shadow);
+    }
+  }
+
+.welcome{
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(3, 117, 238);
+    /* color: rgb(92, 166, 244); */
+    font-weight: 600;
+    margin: 10px 0;
+    text-shadow: 2px 2px 18px rgb(88, 105, 161);    
+}
+#main-para2{
+    color: rgb(164, 160, 160);
+       letter-spacing: 4px;
+       text-align: center;
+       font-size: 1.5rem;
+}
+#main-para1{
+    text-align: center;
+}
