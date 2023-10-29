@@ -106,6 +106,142 @@ nav li a:hover{
 #main-para1{
     text-align: center;
 }
+/* section 1 end  */
+
+.explore{
+  margin: 30px 0;
+  padding: 40px 0;
+  text-align: center;
+  letter-spacing: 4px;
+}
+.explore-container{
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+.explore-container h2{
+  margin: 2rem 2rem;
+}
+.explore-boxex{
+  height: 70vh;
+  width: 30vw;
+  background-color: rgb(205, 205, 247);
+  margin: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* overflow: hidden; */
+  background-image: url(mix\ galaxy.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.explore-boxex img{
+  height: 70%;
+ width: 100%; 
+}
+.explore-boxex a{
+  font-size: 1rem;
+  color: white;
+}
+i{
+  display: inline;
+}
+#heading1{
+ text-align: center;
+ margin: 12px;
+ font-size: 2rem;
+}
+.image h2{
+  color: white;
+}
+
+.explore-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8c9c9cf;
+  /* background-image: url(281739.jpg); */
+  margin: 20px 0;
+  background-size: cover;
+  background-position: center;
+  background-color: linear-gradient(to left,cyan,black);
+
+}
+.explore-section h2{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 20px;
+  font-size: 40px;
+  padding: 20px 0;
+}
+.explore-container{
+  width: 90%;
+  height: 80%;
+}
+.explore-card{
+  width: 20%;
+  border-radius: 10px;
+  background-color: #fff;
+  gap: 10px;
+  text-align: center;
+  margin-bottom:20px ;
+
+}
+@media (max-width:500px){
+  .explore-card{
+      width: 90%;
+  }
+  .explore-section h2{
+      font-size: 24px;
+  }
+}
+@media (min-width:500px) and (max-width:1000px){
+  .explore-card{
+      width: 45%;
+  }
+}
+.explore-card h3{
+  text-align: center;
+  background-color: #ffffffc9;
+  border-radius: 10px;
+}
+.explore-card p{
+  padding: 5px;
+}
+
+.image{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+
+}
+.image:hover{
+  box-shadow: 0px 5px 10px rgb(79, 79, 79);
+  transform: scale(1.02);
+  transition: 0.2s ease-in-out;
+}
+#image1{
+  background-image: url(home-img.jpg);
+}
+#image2{
+  background-image: url(atoms.jpg);
+}
+#image3{
+  background-image: url(solar\ system.jpg);
+}
+#image4{
+  background-image: url(andruyan.jpg);
+}
+/* section 2 end  */
+
 /* footer css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body{
