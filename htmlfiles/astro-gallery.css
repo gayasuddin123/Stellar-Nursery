@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    text-decoration: none;
+    font-family: poppins, 'Roboto', sans-serif;
+    
+}
+.header {
+  position: relative;
+  width: 100%;
+  background-color: rgb(41, 42, 43);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.navbar .logo a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+
+}
+
+.navbar .links a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 0;
+  transition: 0.2s ease;
+}
+
+.navbar .links a:hover {
+  color: #47b2e4;
+}
+
+.navbar .buttons a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 15px 0;
+  transition: 0.2s ease;
+}
+
+.navbar .buttons a:not(:last-child) {
+  margin-right: 30px;
+}
+
+.navbar .buttons .signin:hover {
+  color: #47b2e4;
+}
+
+.navbar .buttons .signup {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.navbar .buttons .signup:hover {
+  background-color: #47b2e4;
+  color: #fff;
+}
+
+
+
+/* Hamburger menu styles */
+#menu-toggle {
+  display: none;
+}
+
+#hamburger-btn {
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  /* order: 2; */
+
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar .logo a {
+    font-size: 1.5rem;
+  }
+
+  .links {
+    position:absolute;
+    left: -100%;
+    top: 75px;
+    width: 100%;
+    height: 30vh;
+    padding-top: 50px;
+    background: #05315b;
+    background-image: url(bg-stars.jpg);
+    flex-direction: column;
+    transition: 0.3s ease;
+    z-index: 2;
+  }
+
+  .navbar #menu-toggle:checked ~ .links {
+    left: 0;
+  }
+
+  .navbar #hamburger-btn {
+    display: block;
+  }
+
+  .header .buttons {
+    display: none;
+  }
+
+  .hero-section .hero {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-section img {
+    display: none;
+  }
+}
+/* navbar end  */
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    /* background: #807e7e; */
+    flex-wrap: wrap;
+    position: relative;
+    /* top: 90px; */
+    margin-bottom: 10px;
+}
+#item1{
+    width: 90%;
+    height: 600px;
+}
+.item{
+  display:flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    width: 45%;
+    height: 600px;
+    /* background-color: rgb(239, 195, 195); */
+    margin: 10px;
+    text-align: center;
+}
+
+.image{
+  width: 90%;
+  height: 60%;
+  background-color: #224346;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#image1{
+    background-color: #224346;
+    background-image: url(solar\ system.jpg);
+    height: 70%;
+}
+#image2{
+    background-image: url(mercury.jpg);
+}
+#image3{
+    background-image: url(venus.png);
+}
+#image4{
+    background-image: url(earth.jpg);
+}
+#image5{
+    background-image: url(mars.jpg);
+}
+#image6{
+    background-image: url(jupiter.jpg);
+}
+#image7{
+    background-image: url(saturn.jpg);
+}
+#image8{
+    background-image: url(uranus.jpg);
+}
+#image9{
+    background-image: url(neptune.jpg);
+}
+#image10{
+    background-image: url(sun\ hd.jpg);
+}
+#image11{
+    background-image: url(pluto.jpg);
+}
+
+@media (max-width:650px){
+  .item{
+    width: 90%;
+  }
+}
+
+/* footer css */
+
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+  }
+  .container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #24262b;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 80px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    /* color: #ffffff; */
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 5px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  #footer-followus{
+      margin-top: 30px;
+  }
+  
+  /*responsive*/
+  @media(max-width: 600px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
