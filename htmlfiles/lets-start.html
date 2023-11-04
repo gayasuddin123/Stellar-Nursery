@@ -4,24 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lets-start</title>
+  <title>Document</title>
   <link rel="stylesheet" href="lets-start.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
 </head>
 
 <body>
   <header class="header">
     <nav class="navbar">
-      <h2 class="logo"><a href="#">STELLAR-NURSERY</a></h2>
+      <h2 class="logo"><a href="#"><img src="Stellar Nursery logo img cropped.jpg" style="width: 80px;" alt="error image"></a></h2>
       <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" id="hamburger-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
-        </svg>
+      <label for="menu-toggle" id="hamburger-btn" class="home-burger">
+        <div class="container-toggle-btn" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
       </label>
       <ul class="links">
         <li><a href="#">Home</a></li>
-        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="#">About Us</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>
       <div class="buttons">
@@ -143,49 +145,10 @@
       </div>
     </div>
   </section>
-            <!-- footer start here -->
-            <footer class="footer">
-                <div class="container">
-                 <div class="row">
-                   <div class="footer-col">
-                    <h4>Explore Space</h4>
-                    <ul>
-                      <li><a href="lets-start.html">Novice</a></li>
-                      <li><a href="#">Intermediate</a></li>
-                      <li><a href="#">Expert</a></li>
-                    </ul>
-                  </div>
-                   <div class="footer-col">
-                     <h4>Learn More</h4>
-                     <ul>
-                       <li><a href="#">Article</a></li>
-                       <li><a href="#">Videos</a></li>
-                       <li><a href="#">Constellation</a></li>
-                       <li><a href="astro-gallery.html">Space Images</a></li>
-                     </ul>
-                   </div>
-                   <div class="footer-col">
-                     <h4>get to know us</h4>
-                     <ul>
-                       <li><a href="about_us.html">about our website</a></li>
-                       <li><a href="#">Contact us</a></li>
-                       <li><a href="#">feedback</a></li>
-                     
-                     </ul>
-                   </div>
-                   <div class="footer-col" id="footer-followus">
-                     <h4>follow us</h4>
-                     <div class="social-links">
-                       <a href="#"><i class="fab fa-facebook-f"></i></a>
-                       <a href="#"><i class="fab fa-twitter"></i></a>
-                       <a href="#"><i class="fab fa-instagram"></i></a>
-                       <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                     </div>
-                   </div>
-                 </div>
-                </div>
-             </footer>
-             <!-- footer end -->
 </body>
-
+<script>
+  function myFunction(x){
+    x.classList.toggle("change")
+  }
+</script>
 </html>

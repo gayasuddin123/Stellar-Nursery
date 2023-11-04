@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About-Us</title>
-    <link rel="stylesheet" href="about_us.css">
+    <title>Contact|Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css' rel='stylesheet'>
+    <link rel="stylesheet" href="contact_us.css">
 </head>
 <body>
     <header class="header">
@@ -14,13 +15,13 @@
           <input type="checkbox" id="menu-toggle" />
           <label for="menu-toggle" id="hamburger-btn">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-              <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
             </svg>
           </label>
           <ul class="links">
             <li><a href="#">Home</a></li>
             <li><a href="about_us.html">About Us</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
           <div class="buttons">
             <a href="#" class="signin">Sign In</a>
@@ -28,26 +29,50 @@
           </div>
         </nav>
       </header>
-      <!-- navbar end -->
-      <section>
-        <div class="head-image">
+      <section class="main-section">
+        <div class="container1">
+          <div class="content">
+            <div class="left-side">
+              <div class="address details">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">Address</div>
+                <div class="text-one">B.K.T, Lucknow</div>
+                <div class="text-two">Uttar Pradesh</div>
+              </div>
+              <div class="phone details">
+                <i class="fas fa-phone-alt"></i>
+                <div class="topic">Phone</div>
+                <div class="text-one">+91 6388195800</div>
+                <div class="text-two">+91 7523074411</div>
+              </div>
+              <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">gyasuansari145@gmail.com</div>
+                <div class="text-two">akashsingh08454@gmail.com</div>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="topic-text">Send us a message</div>
+            
+            <form action="#">
+              <div class="input-box">
+                <input type="text" placeholder="Enter your name">
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Enter your email">
+              </div>
+              <div class="input-box message-box">
+                <textarea   cols="30" rows="10" placeholder="Give Your feedback"></textarea>
+              </div>
+              <div class="button">
+                <input type="button" value="Send Now" >
+              </div>
+            </form>
+          </div>
+          </div>
         </div>
-      </section>
-      <section>
-        <div class="main-container">
-            <h1 class="main-child">About Us</h1>
-            <p class="main-child">"Stellar Nursery" is a platform for everyone who loves to dive deep 
-                into the darkness of vast Space. 
-  We provide content not to learn about things but to understand it           
-                    differently and with ease. 
-  Our provided information is compiled according to the user i.e.       
-      Novice , Intermediate , Expert for seamless experience.
- </p>
- <h2 class="main-child">Behind The Scene</h2>
- <p class="main-child">We use the available data over the internet and compile it all the way to make things simpler . We try to keep the format interactive so you don't watch over your time while your'e here with us i.e. 
-    "our moto is to deliver highly-effective and time saving content when it comes to exploring space."</p>
-        </div>
-      </section>
+    </section>
       <!-- footer start here -->
       <footer class="footer">
         <div class="container">
@@ -55,7 +80,7 @@
            <div class="footer-col">
             <h4>Explore Space</h4>
             <ul>
-              <li><a href="lets-start.html">Novice</a></li>
+              <li><a href="htmlfiles/lets-start.html">Novice</a></li>
               <li><a href="#">Intermediate</a></li>
               <li><a href="#">Expert</a></li>
             </ul>
@@ -66,13 +91,13 @@
                <li><a href="#">Article</a></li>
                <li><a href="#">Videos</a></li>
                <li><a href="#">Constellation</a></li>
-               <li><a href="astro-gallery.html">Space Images</a></li>
+               <li><a href="htmlfiles/astro-gallery.html">Space Images</a></li>
              </ul>
            </div>
            <div class="footer-col">
              <h4>get to know us</h4>
              <ul>
-               <li><a href="#">about our website</a></li>
+               <li><a href="about_us.html">about our website</a></li>
                <li><a href="#">Contact us</a></li>
                <li><a href="#">feedback</a></li>
              
